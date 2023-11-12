@@ -1,2 +1,2 @@
-Coding-Dojo MERN stack assignments
+# Coding-Dojo MERN stack assignments
 
