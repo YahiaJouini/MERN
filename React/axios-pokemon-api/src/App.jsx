@@ -1,9 +1,10 @@
+import React from "react"
 import { useEffect, useState } from "react"
 import axios from "axios"
 
 function App() {
 
-  const [data, setData] = useState<any>([])
+  const [data, setData] = useState([])
   
   useEffect(() => {
     axios.get("https://pokeapi.co/api/v2/pokemon/?offset=20&limit=807")
@@ -16,7 +17,7 @@ function App() {
     <div className="container">
       <h1 className="title">Fetch Pokemon</h1>
       <ul>
-        {data && data.map((da: any, idx: number) => <li key={idx}>{da.name}</li>)}
+        {data && data.map((da,idx) => <li key={idx}>{da.name}</li>)}
       </ul>
     </div>
   )

@@ -1,5 +1,6 @@
 import Fields from "./components/Fields"
 import Display from "./components/Display"
+import React from "react"
 
 import { useState } from "react"
 function App() {
@@ -45,21 +46,24 @@ function App() {
           <h1 className="text-center text-xl mb-6">Your Form Data</h1>
 
           <table className="">
-            <tr>
-              <td>First Name : </td><td>{Fname}</td>
-            </tr>
-            <tr>
-              <td>Lasr Name : </td><td>{Lname}</td>
-            </tr>
-            <tr>
-              <td>Email : </td><td>{email}</td>
-            </tr>
-            <tr>
-              <td>Password : </td><td>{pwd}</td>
-            </tr>
-            <tr>
-              <td>Confirm Password : </td><td>{Confirm}</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>First Name : </td><td>{Fname}</td>
+              </tr>
+              <tr>
+                <td>Lasr Name : </td><td>{Lname}</td>
+              </tr>
+              <tr>
+                <td>Email : </td><td>{email}</td>
+              </tr>
+              <tr>
+                <td>Password : </td><td>{pwd}</td>
+              </tr>
+              <tr>
+                <td>Confirm Password : </td><td>{Confirm}</td>
+              </tr>
+            </tbody>
+
           </table>
 
         </div>
