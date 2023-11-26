@@ -1,11 +1,5 @@
-type TaskType = {
-    input: string
-    complete: boolean
-    id: number
-    HandleDelete: (id: number) => void
-    HandlComplete: (id: number) => void
-}
-export default function Task({ input, id, complete, HandleDelete, HandlComplete }: TaskType) {
+
+export default function Task({ input, id, complete, HandleDelete, HandlComplete }) {
     return (
         <div className="task-contaiener">
             <div className="text">

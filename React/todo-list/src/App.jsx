@@ -3,7 +3,7 @@ import Task from "./components/Task";
 
 function App() {
   const initialData = localStorage.getItem('store') ? JSON.parse(localStorage.getItem('store') || "") : null
-  const [task, setTask] = useState<{ text: string, id: number, complete: boolean }[]>(initialData || [])
+  const [task, setTask] = useState(initialData || [])
   const [input, setInput] = useState('');
   const id = useRef(0)
 
@@ -19,7 +19,7 @@ function App() {
     localStorage.setItem('store', JSON.stringify(task))
   })
 
-  function HandlComplete(id: number) {
+  function HandlComplete(id) {
     const newTask = task.map(old => {
       if (old.id === id) {
         old.complete = !old.complete
@@ -29,7 +29,7 @@ function App() {
     setTask(newTask)
 
   }
-  function HandleDelete(id: number) {
+  function HandleDelete(id) {
     setTask(prev => prev.filter(pr => pr.id !== id))
   }
   return (
