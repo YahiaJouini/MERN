@@ -1,4 +1,5 @@
 const express= require('express')
+const cors=require('cors')
 
 require('dotenv').config()
 require('./config/mongoose.config')
@@ -8,7 +9,7 @@ const app = express()
 
 
 // middleWare
-app.use(express.json(),express.urlencoded({extended:true}))
+app.use(express.json(),express.urlencoded({extended:true}),cors())
 const routes=require('./routes/products.routes')
 routes(app)
 
