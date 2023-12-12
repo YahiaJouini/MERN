@@ -1,0 +1,63 @@
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 20%;
+    margin: auto;
+}
+
+form fieldset {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+fieldset input {
+    margin: 5px 0px 10px 0;
+    height: 30px;
+}
+
+.btn {
+    all: unset;
+    background-color: #6abbf8;
+    padding: 7px 20px;
+    margin-right: 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+table {
+    width: 500px;
+    text-align: center;
+}
+
+table tr:first-child {
+    color: white;
+}
+
+table tr:nth-child(odd) {
+    background-color: #d3d3d3;
+}
